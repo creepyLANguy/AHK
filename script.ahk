@@ -64,3 +64,23 @@ return
     sleep 1000
     Run, "C:\Users\altam\Downloads\RefreshNotificationArea.exe", , Hide
 return
+
+^!o::
+    Run, powercfg -s a1841308-3541-4fab-bc81-f71556f20b4a
+    sleep 500
+    Process,Close,ALsPowerSwitcher.exe
+    sleep 250
+    Run, "C:\Users\altam\Downloads\RefreshNotificationArea.exe", , Hide
+    sleep 250
+    Run, "C:\Users\altam\OneDrive\Documents\ALsPowerSwitcher\ALsPowerSwitcher.exe"
+return
+
+^!p::
+    Run, powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+    sleep 500
+    Process,Close,ALsPowerSwitcher.exe
+    sleep 250
+    Run, "C:\Users\altam\Downloads\RefreshNotificationArea.exe", , Hide
+    sleep 250
+    Run, "C:\Users\altam\OneDrive\Documents\ALsPowerSwitcher\ALsPowerSwitcher.exe"
+return
